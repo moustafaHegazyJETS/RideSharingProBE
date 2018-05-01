@@ -29,23 +29,20 @@
             </form>
         
 
-        <c:forEach var="i" begin="0" end="${users.size()-1}">
+        <c:forEach var="i" begin="0" end="${DenyUsers.size()-1}">
 
             <div>
-                USerName IS : ${users[i].userName}
+                USerName IS : ${DenyUsers[i].userName}
                 <br>
                 <br>
                 
                 
                 <form action="Accept.htm" method="GET">
-                    <input type="hidden" name="id" value="${users[i].idUser}"/>
+                    <input type="hidden" name="id" value="${DenyUsers[i].idUser}"/>
                     <input type="submit" value="Accept request"/>
                 </form>
                 
-                <form action="Deny.htm" method="GET">
-                    <input type="hidden" name="id" value="${users[i].idUser}"/>
-                    <input type="submit" value="Deny request"/>
-                </form>
+                
 
 
             </div>

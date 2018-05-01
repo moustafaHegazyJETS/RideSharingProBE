@@ -17,7 +17,16 @@
     </head>
     <body>
         <c:if test="${!empty User}">
+            
+            
+             <form action="SignOut.htm" method="GET">
+                <input type="submit" value="Sign Out"/>
+            </form>
 
+            <br>
+            <form action="success" method="GET">
+                <input type="submit" value="Back"/>
+            </form>
         
 
         <c:forEach var="i" begin="0" end="${users.size()-1}">

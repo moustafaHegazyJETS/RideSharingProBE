@@ -33,7 +33,17 @@
                 <p style="color: red">${noUsers} </p>
             </form>
 
+            <br>
+            <br>
+            
+            
+            
+            <form action="DeniedUsers.htm" method="GET">
+                <input type="submit" value="Denied Users"/>
+                <p style="color: red">${noUsers} </p>
+            </form>
 
         </c:if>
+            
     </body>
 </html>
