@@ -51,7 +51,7 @@ public class ControllerClass {
             String url = "http://localhost:8084/RideSharingProWS/rest/getUser/" + u.getUserName() + "/" + u.getPassword() + ".json";
 
             RestTemplate restTemplate = new RestTemplate();
-            String result = restTemplate.getForObject(url, String.class);
+            String result = restTemplate.getForObject(url,String.class);
 
             if (result != null) {
 
